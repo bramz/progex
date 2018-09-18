@@ -16,6 +16,7 @@ func main() {
 			fmt.Print(table)
 			fmt.Printf(" | ")
 		}
+		fmt.Printf("\n")
 	}
 	fmt.Printf("\n")
 }
