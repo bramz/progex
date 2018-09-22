@@ -7,6 +7,16 @@ import (
 	"fmt"
 )
 
+func LargestInList(list []int) int {
+	largest := 0
+	for _, i := range list {
+		if i > largest {
+			largest = i
+		}
+	}
+	return largest
+}
+
 func main() {
 	list := []int{
 		1, 2, 3, 4, 5,
@@ -14,11 +24,5 @@ func main() {
 		11, 12, 13, 14,
 	}
 
-	largest := 0
-	for _, i := range list {
-		if i > largest {
-			largest = i
-		}
-	}
-	fmt.Print(largest)
+	fmt.Print(LargestInList(list))
 }
