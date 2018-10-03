@@ -6,6 +6,7 @@ package main
 import "fmt"
 
 func ConcatLists(list1 []int, list2 []int) []int {
+	/* not simplified
 	var newlist []int
 	for i := 0; i < len(list1); i++ {
 		newlist = append(newlist, list1[i])
@@ -14,6 +15,9 @@ func ConcatLists(list1 []int, list2 []int) []int {
 		newlist = append(newlist, list2[n])
 	}
 	return newlist
+	*/
+	list := append(list1, list2...)
+	return list
 }
 
 func main() {
