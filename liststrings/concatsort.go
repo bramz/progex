@@ -11,8 +11,6 @@ import (
 
 func ConcatMerge(list1 []int, list2 []int) []int {
 	var list []int
-	sort.Ints(list1)
-	sort.Ints(list2)
 	list = append(list1, list2...)
 	sort.Ints(list)
 	return list
