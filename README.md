@@ -1,4 +1,4 @@
 # progex
-Series of programming exercises in various languages.
+Series of programming exercises in golang.
 
 [Challenges located here](https://adriann.github.io/programming_problems.html)
